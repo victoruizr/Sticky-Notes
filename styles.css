@@ -17,3 +17,8 @@ header{
 #title{
     padding-top: 2vh;
 }
+
+.contenedor{
+    width: 100%;
+    height: auto;
+}

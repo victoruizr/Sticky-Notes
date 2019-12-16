@@ -50,7 +50,8 @@ function añadirNota(nota, color) {
     not.style.backgroundColor = color;
     not.setAttribute("width", nota.w);
     not.setAttribute("heigth", nota.h);
-    stick.appendChild(not);
+    cont.appendChild(not);
+    stick.appendChild(cont);
     console.log(not);
 }
 
