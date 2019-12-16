@@ -1,3 +1,19 @@
 body{
     background: lightslategray;
 }
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background: lightseagreen;
+}
+
+#logo{
+    width: auto;
+    height: 10vh;
+}
+
+#title{
+    padding-top: 2vh;
+}

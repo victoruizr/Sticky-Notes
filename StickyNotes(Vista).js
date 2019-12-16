@@ -12,19 +12,19 @@ function crearObjetos() {
     boton.innerHTML = "CREAR NOTA";
     boton.addEventListener("click", function () { crearNotas() });
     boton.setAttribute("width", 200 + "px");
-    document.getElementById("notes").appendChild(boton);
+    document.getElementsByTagName("main")[0].appendChild(boton);
     /* BOTON QUE CAMBIA LA VISTA */
     var boton = document.createElement("BUTTON");
     boton.innerHTML = "CAMBIAR VISTA";
     boton.addEventListener("click", function () { cambiarVista() });
     boton.setAttribute("width", 200 + "px");
-    document.getElementById("notes").appendChild(boton);
+    document.getElementsByTagName("main")[0].appendChild(boton);
     /*BOTON QUE VUELVE A LA VISTA ORIGRN */
     var boton = document.createElement("BUTTON");
     boton.innerHTML = "VOLVER A VISTA ORIGINAL";
     boton.addEventListener("click", function () { cambiarVistaOriginal() });
     boton.setAttribute("width", 200 + "px");
-    document.getElementById("notes").appendChild(boton);
+    document.getElementsByTagName("main")[0].appendChild(boton);
 }
 
 function crearNotas() {
@@ -44,7 +44,8 @@ function crearNotas() {
 En esta funcion le paso el objeto nota creado anteriormente
 para posteriormente obtener su ancho  y su altura*/
 function añadirNota(nota, color) {
-    var stick = document.getElementById("notes");
+    var cont = document.createElement("div");
+    var stick = document.getElementsByTagName("main")[0];
     var not = document.createElement("textArea");
     not.style.backgroundColor = color;
     not.setAttribute("width", nota.w);
